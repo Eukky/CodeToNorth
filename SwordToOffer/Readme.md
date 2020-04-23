@@ -45,12 +45,21 @@
 ## 代码的鲁棒性
 
 - [链表中倒数第k个结点](./find_Kth_to_tail.md)
+- [反转链表](./reverse_list.md)
+- [合并两个排序的链表](merge_two_sorted_list.md)
+- [树的子结构](./has_subtree.md)
 
 ## 面试思路
 
+- [二叉树的镜像](./mirror_tree.md)
+
 ## 画图让抽象形象化
 
+- [顺时针打印矩阵](./print_matrix.md)
+
 ## 举例让抽象具体化
+
+- [包含min函数的栈](./stack_include_min.md)
 
 ## 分解让复杂问题简单
 

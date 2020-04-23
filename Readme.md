@@ -9,6 +9,7 @@
 
 ## C++永无止境
 
+- C++ Primer
 - [深度探索C++对象模型](./InsideCppObjectModel/Readme.md)
 - Effective C++
 - More Effective C++
@@ -26,8 +27,14 @@
 
 ## 图形学多有意思
 
+- [LearnOpenGL学习笔记](./LearnOpenGL/Readme.md)
+
 ## 数据也会说话
 
 ## 移动开发是时代潮流
 
 ## 网络应用总是有用
+
+## 关于CV
+
+- [基础知识笔记](./aboutCV/Readme.md)
