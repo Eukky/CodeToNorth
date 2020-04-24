@@ -7,7 +7,7 @@
 - 作用于：类
   - Factory Method
 - 作用于：对象
-  - [抽象工厂(Abstract Factory)](./AbstractFactory.md)
+  - [抽象工厂(Abstract Factory)](./AbstractFactory/AbstractFactory.md)
   - Builder
   - Prototype
   - Singleton
