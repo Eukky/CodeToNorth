@@ -10,7 +10,7 @@
   - [抽象工厂(Abstract Factory)](./AbstractFactory/AbstractFactory.md)
   - Builder
   - Prototype
-  - Singleton
+  - [单例模式(Singleton)](./Singleton/Singleton.md)
 
 ## 结构型模式
 
