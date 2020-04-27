@@ -33,4 +33,4 @@
 ## 网络应用总是有用
 
 ## 关于CV
-- [基础知识笔记]((./aboutCV/Readme.md))
+- [基础知识笔记](./aboutCV/Readme.md)
