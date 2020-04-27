@@ -2,9 +2,15 @@
 
 ## 数组
 
+- [二维数组中的查找](./find_in_2d_matrix.md)
+
 ## 字符串
 
+- [替换空格](./replace_space.md)
+
 ## 链表
+
+- [打印链表](./print_list_from_tail_to_head.md)
 
 ## 树
 
