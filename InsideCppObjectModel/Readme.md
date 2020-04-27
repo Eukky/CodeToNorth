@@ -2,6 +2,10 @@
 
 ## 关于对象
 
+- [C++对象模式](ObjectLessons/CppObjectModel.md)
+- 关键词所带来的差异
+- 对象的差异
+
 ## 构造函数语意学
 
 ## Data语意学
