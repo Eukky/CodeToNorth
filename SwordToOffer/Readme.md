@@ -14,11 +14,20 @@
 
 ## 树
 
+- [重建二叉树](./reconstruct_binary_tree.md)
+
 ## 栈和队列
+
+- [两个栈实现队列](./queue_of_two_stack.md)
 
 ## 查找和排序
 
+- [旋转数组的最小数字](./min_number_in_rotate_array.md)
+
 ## 递归和循环
+
+- [斐波那契数列](./fibonacci.md)
+- [跳台阶](./jump_floor.md)
 
 ## 位运算
 
