@@ -1,5 +1,13 @@
-// 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
+# 两个栈实现队列
 
+用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
+
+## 题解
+
+- `push`操作：将数据压入`stack1`。
+- `pop`操作：将数据从`stack1`一个个压入`stack2`，弹出原`stack1`中的栈底元素，再将数据从`stack2`压回`stack1`。
+
+```cpp
 class Solution
 {
 public:
@@ -25,3 +33,4 @@ private:
     stack<int> stack1;
     stack<int> stack2;
 };
+```
