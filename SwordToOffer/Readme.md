@@ -1,5 +1,7 @@
 # 剑指Offer刷题笔记
 
+此索引按照剑指Offer题库进行分类。
+
 ## 数组
 
 - [二维数组中的查找](./find_in_2d_matrix.md)
@@ -28,12 +30,21 @@
 
 - [斐波那契数列](./fibonacci.md)
 - [跳台阶](./jump_floor.md)
+- [变态跳台阶](./jump_floor_II.md)
+- [矩形覆盖](./rect_cover.md)
 
 ## 位运算
 
+- [二进制中1的个数](./number_of_1.md)
+
 ## 代码的完整性
 
+- [数值的整数次方](./power.md)
+- [调整数组顺序使奇数位于偶数前面](./reorder_array.md)
+
 ## 代码的鲁棒性
+
+- [链表中倒数第k个结点](./find_Kth_to_tail.md)
 
 ## 面试思路
 
