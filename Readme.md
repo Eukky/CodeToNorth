@@ -9,6 +9,7 @@
 
 ## C++永无止境
 
+- C++ Primer
 - [深度探索C++对象模型](./InsideCppObjectModel/Readme.md)
 - Effective C++
 - More Effective C++
