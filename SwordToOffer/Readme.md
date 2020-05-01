@@ -45,8 +45,13 @@
 ## 代码的鲁棒性
 
 - [链表中倒数第k个结点](./find_Kth_to_tail.md)
+- [反转链表](./reverse_list.md)
+- [合并两个排序的链表](merge_two_sorted_list.md)
+- [树的子结构](./has_subtree.md)
 
 ## 面试思路
+
+- [二叉树的镜像](./mirror_tree.md)
 
 ## 画图让抽象形象化
 

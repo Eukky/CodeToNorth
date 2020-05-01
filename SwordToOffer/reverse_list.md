@@ -1,12 +1,17 @@
-// 输入一个链表，反转链表后，输出新链表的表头。
+# 反转链表
 
+输入一个链表，反转链表后，输出新链表的表头。
+
+## 题解
+
+在每次反转节点之前首先记录下一个要反转的节点`r`，反转之后依次移动`p`，`q`的指向。
+
+```cpp
 /*
 struct ListNode {
-	int val;
-	struct ListNode *next;
-	ListNode(int x) :
-			val(x), next(NULL) {
-	}
+    int val;
+    struct ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
 };*/
 class Solution {
 public:
@@ -27,3 +32,4 @@ public:
         return p;
     }
 };
+```

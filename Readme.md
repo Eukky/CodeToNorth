@@ -26,6 +26,8 @@
 
 ## 图形学多有意思
 
+- [LearnOpenGL学习笔记](./LearnOpenGL/Readme.md)
+
 ## 数据也会说话
 
 ## 移动开发是时代潮流
