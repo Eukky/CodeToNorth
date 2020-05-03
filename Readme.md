@@ -15,7 +15,7 @@
 
 - C++ Primer
 - [深度探索C++对象模型](./InsideCppObjectModel/Readme.md)
-- Effective C++
+- [Effective C++](./EffectiveCpp/Readmd.md)
 - More Effective C++
 
 ## 编程也要懂得方法

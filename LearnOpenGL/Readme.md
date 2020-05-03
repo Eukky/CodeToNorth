@@ -2,6 +2,9 @@
 
 ## 入门
 
+- [OpenGL与基本概念](./Introduction/OpenGL.md)
+- [渲染管线](./Introduction/GraphicsPipeline.md)
+
 ## 光照
 
 ## 模型加载
