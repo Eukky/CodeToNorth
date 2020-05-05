@@ -60,6 +60,8 @@
 ## 举例让抽象具体化
 
 - [包含min函数的栈](./stack_include_min.md)
+- [栈的压入、弹出序列](./is_pop_order.md)
+- [从上往下打印二叉树](./print_from_top_to_bottom.md)
 
 ## 分解让复杂问题简单
 
