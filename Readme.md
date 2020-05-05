@@ -44,6 +44,10 @@
 - FFmpeg雷霄骅博客学习笔记
 - AVFoundation开发秘籍
 
-## 关于CV
+## 计算机视觉
 
-- [基础知识笔记](./aboutCV/Readme.md)
+- [基础知识笔记](./ComputerVision/Readme.md)
+
+## 面试经验与总结
+
+- [面试经验](./Interview/Readme.md)
