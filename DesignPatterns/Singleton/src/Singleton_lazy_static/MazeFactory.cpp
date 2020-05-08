@@ -1,6 +1,6 @@
 #include "MazeFactory.h"
 
-MazeFactory* MazeFactory::Instance() {
-    static MazeFactory* instance;
+MazeFactory& MazeFactory::Instance() {
+    static MazeFactory instance;
     return instance;
 }
