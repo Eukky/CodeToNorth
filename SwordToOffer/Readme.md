@@ -69,6 +69,7 @@
 
 - [复杂链表的复制](./clone_random_list.md)
 - [二叉搜索树与双向链表](./bst_to_doubly_linked_list.md)
+- [字符串的排列](./permutation.md)
 
 ## 时间效率
 
