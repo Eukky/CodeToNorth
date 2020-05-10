@@ -62,8 +62,13 @@
 - [包含min函数的栈](./stack_include_min.md)
 - [栈的压入、弹出序列](./is_pop_order.md)
 - [从上往下打印二叉树](./print_from_top_to_bottom.md)
+- [二叉搜索树的后序遍历序列](./verify_squence_of_BST.md)
+- [二叉树中和为某一值的路径](./find_path_in_binary_tree.md)
 
 ## 分解让复杂问题简单
+
+- [复杂链表的复制](./clone_random_list.md)
+- [二叉搜索树与双向链表](./bst_to_doubly_linked_list.md)
 
 ## 时间效率
 
