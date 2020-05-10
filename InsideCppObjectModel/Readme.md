@@ -4,7 +4,7 @@
 
 - [C++对象模式](ObjectLessons/CppObjectModel.md)
 - [关键词所带来的差异](ObjectLessons/KeywordDistinction.md)
-- 对象的差异
+- [对象的差异](ObjectLessons/ObjectDistinction.md)
 
 ## 构造函数语意学
 
