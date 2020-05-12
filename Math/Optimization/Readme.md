@@ -8,6 +8,8 @@
 
 $$x_n^{(i+1)}=x_n^{(i)}-\eta\frac{\partial f}{\partial x_n}(x^{(i)})$$
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=x_n^{(i&plus;1)}=x_n^{(i)}-\eta\frac{\partial&space;f}{\partial&space;x_n}(x^{(i)})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_n^{(i&plus;1)}=x_n^{(i)}-\eta\frac{\partial&space;f}{\partial&space;x_n}(x^{(i)})" title="x_n^{(i+1)}=x_n^{(i)}-\eta\frac{\partial f}{\partial x_n}(x^{(i)})" /></a>
+
 其中$\eta$为学习率。没啥好写的了
 
 ### 牛顿法
@@ -22,6 +24,8 @@ $$x_n^{(i+1)}=x_n^{(i)}-\eta\frac{\partial f}{\partial x_n}(x^{(i)})$$
     所以，牛顿法可以用于 1.解方程 2.最优化
     
     设$f(x)=0$的根为r。给出初始点$x_0$，过点$(x_0,f(x_0))$作与$y=f(x)$相交的切线，切线方程为$y=f(x_0)+f'(x_0)(x-x_0)$。取其与$x$轴相交的点为$x_1$，则$x_1=x_0-\frac{f(x_0)}{f'(x_1)}$。虽然求得的$x_1$并不能让$f(x)=0$，但是$f(x_1)$的值比$f(x_0)$更接近$f(x)=0$。于是就可以迭代求解了
+
+    设<a href="https://www.codecogs.com/eqnedit.php?latex=f(x)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x)=0" title="f(x)=0" /></a>的根为r。给出初始点$x_0$，过点$(x_0,f(x_0))$作与$y=f(x)$相交的切线，切线方程为$y=f(x_0)+f'(x_0)(x-x_0)$。取其与$x$轴相交的点为$x_1$，则$x_1=x_0-\frac{f(x_0)}{f'(x_1)}$。虽然求得的$x_1$并不能让$f(x)=0$，但是$f(x_1)$的值比$f(x_0)$更接近$f(x)=0$。于是就可以迭代求解了
 
     ！注意，此处的$f(x)$本身即为导数（单纯是为了配合这张图）
 
