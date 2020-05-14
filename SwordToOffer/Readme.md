@@ -73,6 +73,10 @@
 
 ## 时间效率
 
+- [数组中出现次数超过一半的数字](./more_than_half_num.md)
+- [最小的K个数](./get_least_numbers.md)
+- [连续子数组的最大和](./find_greatest_sum_of_sub_array.md)
+
 ## 时间空间效率的平衡
 
 ## 知识迁移能力
