@@ -29,15 +29,38 @@ LR的做法是把直线掰弯：<a href="https://www.codecogs.com/eqnedit.php?la
 
 设<a href="https://www.codecogs.com/eqnedit.php?latex=P(Y=1|x)=\frac{e^{wx&plus;b}}{1&plus;e^{wx&plus;b}}=\pi&space;(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(Y=1|x)=\frac{e^{wx&plus;b}}{1&plus;e^{wx&plus;b}}=\pi&space;(x)" title="P(Y=1|x)=\frac{e^{wx+b}}{1+e^{wx+b}}=\pi (x)" /></a>，由sigmoid的值域可知<a href="https://www.codecogs.com/eqnedit.php?latex=P(Y=0|x)=1-\pi&space;(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(Y=0|x)=1-\pi&space;(x)" title="P(Y=0|x)=1-\pi (x)" /></a>。推导过程如下：
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;\begin{aligned}&space;L(w)&=\sum_{i=1}^{N}[y_i\log&space;\pi&space;(x_i)&plus;(1-y_i&space;\log&space;(1-\pi&space;(x_i))]\\&space;&=&space;\sum_{i=1}^{N}[y_i\log&space;\frac{\pi&space;(x_i)}{(1-\pi&space;(x_i)}&plus;\log&space;(1-\pi&space;(x_i))]\\&space;&=&space;\sum_{i=1}^{N}[y_i(wx_i)-\log&space;(1-e^{wx_i})]&space;\end{aligned}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{equation}&space;\begin{aligned}&space;L(w)&=\sum_{i=1}^{N}[y_i\log&space;\pi&space;(x_i)&plus;(1-y_i&space;\log&space;(1-\pi&space;(x_i))]\\&space;&=&space;\sum_{i=1}^{N}[y_i\log&space;\frac{\pi&space;(x_i)}{(1-\pi&space;(x_i)}&plus;\log&space;(1-\pi&space;(x_i))]\\&space;&=&space;\sum_{i=1}^{N}[y_i(wx_i)-\log&space;(1-e^{wx_i})]&space;\end{aligned}&space;\end{equation}" title="\begin{equation} \begin{aligned} L(w)&=\sum_{i=1}^{N}[y_i\log \pi (x_i)+(1-y_i \log (1-\pi (x_i))]\\ &= \sum_{i=1}^{N}[y_i\log \frac{\pi (x_i)}{(1-\pi (x_i)}+\log (1-\pi (x_i))]\\ &= \sum_{i=1}^{N}[y_i(wx_i)-\log (1-e^{wx_i})] \end{aligned} \end{equation}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=L(w)=\sum_{i=1}^{N}[y_i\log&space;\pi&space;(x_i)&plus;(1-y_i&space;\log&space;(1-\pi&space;(x_i))]\\&space;=&space;\sum_{i=1}^{N}[y_i\log&space;\frac{\pi&space;(x_i)}{(1-\pi&space;(x_i)}&plus;\log&space;(1-\pi&space;(x_i))]\\&space;=&space;\sum_{i=1}^{N}[y_i(wx_i)-\log&space;(1-e^{wx_i})]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L(w)=\sum_{i=1}^{N}[y_i\log&space;\pi&space;(x_i)&plus;(1-y_i&space;\log&space;(1-\pi&space;(x_i))]\\&space;=&space;\sum_{i=1}^{N}[y_i\log&space;\frac{\pi&space;(x_i)}{(1-\pi&space;(x_i)}&plus;\log&space;(1-\pi&space;(x_i))]\\&space;=&space;\sum_{i=1}^{N}[y_i(wx_i)-\log&space;(1-e^{wx_i})]" title="L(w)=\sum_{i=1}^{N}[y_i\log \pi (x_i)+(1-y_i \log (1-\pi (x_i))]\\ = \sum_{i=1}^{N}[y_i\log \frac{\pi (x_i)}{(1-\pi (x_i)}+\log (1-\pi (x_i))]\\ = \sum_{i=1}^{N}[y_i(wx_i)-\log (1-e^{wx_i})]" /></a>
 
 对其求偏导：
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L(w)}{\partial&space;w}=\sum&space;_{i=1}^{N}[y_ix_i-\frac{e^{wx_i}}{1&plus;e^{wx_i}}x_i]=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L(w)}{\partial&space;w}=\sum&space;_{i=1}^{N}[y_ix_i-\frac{e^{wx_i}}{1&plus;e^{wx_i}}x_i]=0" title="\frac{\partial L(w)}{\partial w}=\sum _{i=1}^{N}[y_ix_i-\frac{e^{wx_i}}{1+e^{wx_i}}x_i]=0" /></a>
 
 ## 支持向量机 Support Vector Machine
 ![](./imgs/2.jpg)
-支持向量机的核心思想就是在两类样本（两类的label分别为+1和-1）中寻找一个决策面，这个决策面一般表示就是<a href="https://www.codecogs.com/eqnedit.php?latex=W^TX&plus;b=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?W^TX&plus;b=0" title="W^TX+b=0" /></a>，我们需要找到一个最佳权值使得间隔最大。所以SVM的优化目标为：
+
+支持向量机的核心思想就是在两类样本（两类的label分别为+1和-1）中寻找一个决策面，这个决策面一般表示就是<a href="https://www.codecogs.com/eqnedit.php?latex=W^TX&plus;b=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?W^TX&plus;b=0" title="W^TX+b=0" /></a>，我们需要找到一个最佳权值使得间隔最大。
+
+所以SVM的优化目标为：
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}&space;&\min&space;\frac{1}{2}||w||^2&space;&&space;\\&space;&(wx_i&plus;b)y\geq&space;1&space;&&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;&\min&space;\frac{1}{2}||w||^2&space;&&space;\\&space;&(wx_i&plus;b)y\geq&space;1&space;&&space;\end{matrix}\right." title="\left\{\begin{matrix} &\min \frac{1}{2}||w||^2 & \\ &(wx_i+b)y\geq 1 & \end{matrix}\right." /></a>
 
-再难一点的我也不会了……
+接下来就是用KKT条件啦~ 引入拉格朗日乘子法：
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=L(w,b,\alpha)=\frac{1}{2}w^Tw&plus;\alpha_1h_1(x)&plus;...&plus;\alpha_nh_n(x)\\&space;=\frac{1}{2}w^Tw-\alpha[y_1(wx_1&plus;b)-1]-...-a_n[y_n(wx_n&plus;b)-1]\\&space;=\frac{1}{2}w^Tw-\sum&space;^{N}_{i=1}a_iy_i(wx_i&plus;b)&plus;\sum^N_{i=1}\alpha_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L(w,b,\alpha)=\frac{1}{2}w^Tw&plus;\alpha_1h_1(x)&plus;...&plus;\alpha_nh_n(x)\\&space;=\frac{1}{2}w^Tw-\alpha[y_1(wx_1&plus;b)-1]-...-a_n[y_n(wx_n&plus;b)-1]\\&space;=\frac{1}{2}w^Tw-\sum&space;^{N}_{i=1}a_iy_i(wx_i&plus;b)&plus;\sum^N_{i=1}\alpha_i" title="L(w,b,\alpha)=\frac{1}{2}w^Tw+\alpha_1h_1(x)+...+\alpha_nh_n(x)\\ =\frac{1}{2}w^Tw-\alpha[y_1(wx_1+b)-1]-...-a_n[y_n(wx_n+b)-1]\\ =\frac{1}{2}w^Tw-\sum ^{N}_{i=1}a_iy_i(wx_i+b)+\sum^N_{i=1}\alpha_i" /></a>
+
+求导吧！
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L}{\partial&space;w}=w-\sum^N_{i=1}\alpha_iy_ix_i=0&space;\Rightarrow&space;\sum^N_{i=1}\alpha_iy_ix_i\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;w}=w-\sum^N_{i=1}\alpha_iy_ix_i=0&space;\Rightarrow&space;\sum^N_{i=1}\alpha_iy_ix_i\\" title="\frac{\partial L}{\partial w}=w-\sum^N_{i=1}\alpha_iy_ix_i=0 \Rightarrow \sum^N_{i=1}\alpha_iy_ix_i\\" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L}{\partial&space;w}=-\sum^N_{i=1}\alpha_iy_i=0&space;\Rightarrow&space;\sum^N_{i=1}\alpha_iy_i=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;w}=-\sum^N_{i=1}\alpha_iy_i=0&space;\Rightarrow&space;\sum^N_{i=1}\alpha_iy_i=0" title="\frac{\partial L}{\partial w}=-\sum^N_{i=1}\alpha_iy_i=0 \Rightarrow \sum^N_{i=1}\alpha_iy_i=0" /></a>
+
+👆非常重要！
+
+将<a href="https://www.codecogs.com/eqnedit.php?latex=w" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w" title="w" /></a>和<a href="https://www.codecogs.com/eqnedit.php?latex=b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b" title="b" /></a>代回最开始的式子（我懒得打啦！），可以得到：
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\max&space;W(\alpha)=-\frac{1}{2}(\sum^N_{i,j=1}\alpha_iy_i\alpha_jy_jx_i*x_j)&plus;\sum^N_{i=1}\alpha_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\max&space;W(\alpha)=-\frac{1}{2}(\sum^N_{i,j=1}\alpha_iy_i\alpha_jy_jx_i*x_j)&plus;\sum^N_{i=1}\alpha_i" title="\max W(\alpha)=-\frac{1}{2}(\sum^N_{i,j=1}\alpha_iy_i\alpha_jy_jx_i*x_j)+\sum^N_{i=1}\alpha_i" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=s.t.&space;\quad&space;\alpha\geq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?s.t.&space;\quad&space;\alpha\geq&space;0" title="s.t. \quad \alpha\geq 0" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sum^N_{i=1}\alpha_iy_i=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum^N_{i=1}\alpha_iy_i=0" title="\sum^N_{i=1}\alpha_iy_i=0" /></a>
+
+关于对偶问题和进阶的SMO我真的不会了
