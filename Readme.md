@@ -8,6 +8,8 @@
 暂时不需要
 
 - [四元数](./Math/Quaternion/Readme.md)
+- [最优化](./Math/Optimization/Readme.md)
+- [机器学习](./Math/MachineLearning/Readme.md)
 
 ## 基础真的很重要
 
