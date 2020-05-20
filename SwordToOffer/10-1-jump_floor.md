@@ -46,7 +46,7 @@ public:
 - 循环解法
 ```python
 class Solution:
-    def numWays(self, n: int) -> int:
+    def jumpFloor(self, n: int) -> int:
         a, b = 1,1
         for i in range(2,n+2):
             a, b = b, a+b
@@ -58,7 +58,7 @@ class Solution:
 ```python
 class Solution:
     @lru_cache(None)
-    def numWays(self, n: int) -> int:
+    def jumpFloor(self, n: int) -> int:
         if n == 0:
             return 1
         if n == 1:
