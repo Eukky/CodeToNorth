@@ -32,4 +32,5 @@
 
 ## 字符串
 
-- [680. 验证回文字符串 II](./680-validPalindrome.md)
+- [680. 验证回文字符串 II](./680_validPalindrome.md)
+- [1248. 统计「优美子数组」](./1248_numberOfSubarrays.md)
