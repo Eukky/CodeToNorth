@@ -45,7 +45,7 @@
 
 由于 `pre[j]` 肯定非负，故 `pre[i] - k` 可以不放入哈希表中。
 
-![演示](.\1248.gif)
+![演示](https://github.com/Eukky/CodeToNorth/blob/Diane/Leetcode/1248.gif)
 ### Python版本
 
 ```python
