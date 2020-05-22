@@ -3,7 +3,7 @@
 
 注意: 你可以假设树中没有重复的元素。
 
-本题与 [剑指Offer面试题07一样](D:\CodeToNorth\SwordToOffer\07-reconstruct_binary_tree.md)
+本题与 ***剑指Offer面试题07*** 一样
 ## 题解
 前序遍历：根节点，左子树，右子树
 中序遍历：左子树，根节点，右子树
