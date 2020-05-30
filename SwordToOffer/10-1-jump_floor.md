@@ -6,7 +6,8 @@
 
 每一次可以跳一级或者两级，因此到达每一级的跳法为：$f(n)=f(n-1)+f(n-2)$
 
-### C++版本
+### C++
+
 - 循环解法
 
 ```cpp
@@ -41,9 +42,10 @@ public:
 };
 ```
 
-### Python版本
+### Python
 
 - 循环解法
+
 ```python
 class Solution:
     def jumpFloor(self, n: int) -> int:

@@ -6,7 +6,7 @@
 
 设置两个栈 `stack1` 和 `stack2`。`stack1` 负责存储进入队列的数据，将`stack1`中的数据取出再压入`stack2`，此时`stack2`的栈顶元素相当于队列的头元素。
 
-### C++版本
+### C++
 
 ```cpp
 class Solution
@@ -36,7 +36,8 @@ private:
 };
 ```
 
-### Python版本
+### Python
+
 ```python
 class CQueue:
 
@@ -55,8 +56,6 @@ class CQueue:
             return self.stack2.pop()
         elif self.stack2 != []:
             return self.stack2.pop()
-
-
 
 # Your CQueue object will be instantiated and called as such:
 # obj = CQueue()

@@ -8,7 +8,7 @@
 
 也可以直接再生成一个str，遍历s，若为空格，则在str后添加 `%20`， 否则添加s[i]。
 
-### C++版本
+### C++
 
 ```cpp
 class Solution {
@@ -48,7 +48,7 @@ public:
 };
 ```
 
-### Python版本
+### Python
 
 ```python
 class Solution:

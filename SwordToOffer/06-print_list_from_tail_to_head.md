@@ -6,7 +6,7 @@
 
 典型的“先进后出”，可利用栈实现。
 
-### C++版本
+### C++
 
 ```cpp
 /**
@@ -31,7 +31,8 @@ public:
 };
 ```
 
-### Python版本
+### Python
+
 ```python
 # Definition for singly-linked list.
 # class ListNode:
