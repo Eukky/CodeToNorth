@@ -1,12 +1,12 @@
-# 斐波那契数列
+# 10. 斐波那契数列
 
 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项，从0开始，第0项为0。
 
 ## 题解
 
 斐波那契数列：$f(n)=f(n-1)+f(n-2)$
-
-- 循环解法
+### 1. C++版本
+- 循环
 
 ```cpp
 class Solution {
@@ -23,7 +23,7 @@ public:
 };
 ```
 
-- 递归解法
+- 递归
 
 ```cpp
 class Solution {
@@ -41,4 +41,32 @@ public:
         return (Fibonacci(n - 1) + Fibonacci(n - 2));
     }
 };
+```
+
+### 2. Python版本
+- 循环
+```python
+class Solution:
+    def fib(self, n: int) -> int:
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        a, b = 0, 1
+        for i in range(n):
+            a, b = b, a+b
+
+        return a % 1000000007
+```
+
+- 递归
+```python
+class Solution:
+    @lru_cache(None)    # 不加可能会超过时间限制
+    def fib(self, n: int) -> int:
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        return (self.fib(n-1) + self.fib(n-2))%1000000007
 ```
