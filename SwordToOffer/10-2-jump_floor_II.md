@@ -8,8 +8,8 @@
 
 归纳可得$f(n) = 2^(n-1)$
 
+### C++
 
-### C++版本
 ```cpp
 class Solution {
 public:
@@ -27,11 +27,11 @@ public:
 };
 ```
 
-### Python 
+### Python
+
 ```python
 class Solution:
     def jumpFloorII(self, number):
         # write code here
         return 2**(number-1)
 ```
-

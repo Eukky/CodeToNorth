@@ -5,8 +5,10 @@
 ## 题解
 
 斐波那契数列：$f(n)=f(n-1)+f(n-2)$
-### 1. C++版本
-- 循环
+
+### C++
+
+- 循环解法
 
 ```cpp
 class Solution {
@@ -23,7 +25,7 @@ public:
 };
 ```
 
-- 递归
+- 递归解法
 
 ```cpp
 class Solution {
@@ -43,8 +45,10 @@ public:
 };
 ```
 
-### 2. Python版本
-- 循环
+### 2. Python
+
+- 循环解法
+  
 ```python
 class Solution:
     def fib(self, n: int) -> int:
@@ -59,7 +63,8 @@ class Solution:
         return a % 1000000007
 ```
 
-- 递归
+- 递归解法
+
 ```python
 class Solution:
     @lru_cache(None)    # 不加可能会超过时间限制
