@@ -15,6 +15,8 @@
 由于nums里的所有数字都在0~n-1，我们可构建一个哈希表辅助求解，然而这样做的空间复杂度为O(n)。
 为了实现O(1)的空间复杂度，可以考虑采用原地置换的方式，将原数组重新排序，使得位置 i 的数等于 i 。若nums[nums[i]] == nums[i]，则nums[i]重复了，反之交换二者的位置。
 
+### Python
+
 ```python
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:

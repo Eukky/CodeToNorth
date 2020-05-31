@@ -45,7 +45,7 @@ public:
 };
 ```
 
-### 2. Python
+### Python
 
 - 循环解法
   
