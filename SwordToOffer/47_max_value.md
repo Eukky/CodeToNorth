@@ -29,7 +29,7 @@ grid[i][j]+dp[i-1][j] & , i \neq 0, j=0 \\
 grid[i][j]+\max (dp[i][j-1], dp[i-1][j]) & , i \neq 0, j \neq 0
 \end{array}\right.$$
 
-### Python版本
+### Python
 
 ```python
 class Solution:

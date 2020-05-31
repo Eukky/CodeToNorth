@@ -25,6 +25,8 @@
 
 ## 题解
 
+### Python
+
 ```python
 # Definition for singly-linked list.
 # class ListNode:
