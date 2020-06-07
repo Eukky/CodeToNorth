@@ -28,9 +28,11 @@
 - [96. 不同的二叉搜索树](./96_Unique_Binary_Search_Trees.md)
 
 ## 动态规划
- - [152. 乘积最大子数组](./152_maxProduct.md)
+
+- [152. 乘积最大子数组](./152_maxProduct.md)
 
 ## 字符串
+
 - [5. 最长回文子串](./5_longestPalindrome.md)
 - [680. 验证回文字符串 II](./680_validPalindrome.md)
 - [1248. 统计「优美子数组」](./1248_numberOfSubarrays.md)

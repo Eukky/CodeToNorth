@@ -3,9 +3,7 @@
 编码向南，晒瞎狗眼。  
 编码向北，没有终点。
 
-## ~~可能需要~~数学知识
-
-暂时不需要
+## 数学基础
 
 - [四元数](./Math/Quaternion/Readme.md)
 - [最优化](./Math/Optimization/Readme.md)
@@ -40,6 +38,8 @@
 ## 图形学多有意思
 
 - [LearnOpenGL学习笔记](./LearnOpenGL/Readme.md)
+- Games101-现代计算机图形学入门
+- Games201
 
 ## 哪儿都有用的音视频
 
