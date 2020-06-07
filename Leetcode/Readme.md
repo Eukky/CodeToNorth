@@ -6,13 +6,18 @@
 
 ## 链表
 
-- [2. 两数相加](2_Add_Two_Numbers.md)
+- [2. 两数相加](./2_Add_Two_Numbers.md)
+
+## 数组
+
+- [84. 柱状图中最大的矩形](./84_largestRectangleArea.md)
 
 ## 二叉树
 
 - [94. 二叉树的中序遍历](./94_Binary_Tree_Inorder_Traversal.md)
 - [95. 不同的二叉搜索树II](./95_Unique_Binary_Search_Trees_II.md)  
 - [96. 不同的二叉搜索树](./96_Unique_Binary_Search_Trees.md)
+- [100. 相同的树](./100_isSameTree.md)
 
 ## 哈希表
 
@@ -30,6 +35,7 @@
 ## 动态规划
 
 - [152. 乘积最大子数组](./152_maxProduct.md)
+- [837. 新21点](./837_new21Game.md)
 
 ## 字符串
 
