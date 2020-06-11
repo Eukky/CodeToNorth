@@ -14,14 +14,17 @@
 ```cpp
 class Solution {
 public:
-    bool Find(int target, vector<vector<int> > array) {
-        int m = array.size();
-        int n = array[0].size();
+    bool findNumberIn2DArray(vector<vector<int>>& matrix, int target) {
+        if(matrix.size() == 0 || matrix[0].size() == 0) {
+            return false;
+        }
+        int m = matrix.size();
+        int n = matrix[0].size();
         int i = 0, j = n - 1;
         while(i <= m - 1 && j >= 0){
-            if(target > array[i][j]){
+            if(target > matrix[i][j]){
                 i++;
-            }else if(target < array[i][j]){
+            }else if(target < matrix[i][j]){
                 j--;
             }else{
                 return true;
