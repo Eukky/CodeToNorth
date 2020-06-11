@@ -30,9 +30,9 @@
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         def check(p1, p2):
-            if not p1 and not p2: 
+            if not p1 and not p2:
                 return True
-            elif not p1 or not p2: 
+            elif not p1 or not p2:
                 return False
             return p1.val == p2.val and check(p1.left, p2.right) and check(p1.right,p2.left)
         if root == None:
