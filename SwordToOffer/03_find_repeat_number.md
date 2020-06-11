@@ -16,6 +16,26 @@
 
 - 使用哈希表：将元素存入哈希表之后进行查询。
 
+### C++
+
+```cpp
+//交换法
+class Solution {
+public:
+    int findRepeatNumber(vector<int>& nums) {
+        for(int i = 0; i < nums.size(); ++i) {
+            while(nums[i] != i) {
+                if(nums[i] == nums[nums[i]]) {
+                    return nums[i];
+                }
+                swap(nums[i], nums[nums[i]]);
+            }
+        }
+        return -1;
+    }
+};
+```
+
 ### Python
 
 ```python

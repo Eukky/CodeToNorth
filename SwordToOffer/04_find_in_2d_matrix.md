@@ -54,3 +54,33 @@ class Solution:
                 i = i + 1                   # 删除该行
         return False
 ```
+
+### Rust
+
+```rust
+impl Solution {
+    pub fn find_number_in2_d_array(matrix: Vec<Vec<i32>>, target: i32) -> bool {
+        if matrix.len() == 0 || matrix[0].len() == 0 {
+            return false;
+        }
+        let (m, n) = (matrix.len(), matrix[0].len());
+        let mut i = 0;
+        let mut j = n - 1;
+        while i <= m - 1 && j >= 0 {
+            if target > matrix[i][j] {
+                i += 1;
+            } else if target < matrix[i][j] {
+                //j的类型为usize,需判断j是否大于等于1，否则会造成溢出
+                if j > 0 {
+                    j -= 1;
+                } else {
+                    return false;
+                }
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```

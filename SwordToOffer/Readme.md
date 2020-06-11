@@ -143,8 +143,8 @@
 |:-:|:-:|:-:|:-:|:-:|
 |1|[赋值运算符函数](./01_reload_operator.md)|√|||
 |2|[实现Singleton模式](./02_singleton.md)|√|||
-|3|[数组中重复的数字](./03_find_repeat_number.md)||√|√|
-|4|[二维数组中的查找](./04_find_in_2d_matrix.md)|√|√||
+|3|[数组中重复的数字](./03_find_repeat_number.md)|√|√|√|
+|4|[二维数组中的查找](./04_find_in_2d_matrix.md)|√|√|√|
 |5|[替换空格](./05_replace_space.md)|√|√||
 |6|[从尾到头打印链表](./06_print_list_from_tail_to_head.md)|√|√||
 |7|[重建二叉树](./07_reconstruct_binary_tree.md)|√|√||
